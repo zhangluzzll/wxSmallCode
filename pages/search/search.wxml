@@ -1,0 +1,29 @@
+<!--<import src="../template/footer"/>-->
+<view class="box">
+    <view class="header">
+    <input type="text" placeholder="搜索" auto-focus 
+    placeholder-style="color:#16140F;font-size:30rpx;font-weight:bolder;text-align:center;"
+    bindchange="selectData" id="search"
+    />
+    </view>
+    <!--=============关键词=================-->
+    <view class="section" style="display:{{hideen}}">
+        <view class="hotText">
+            <text>热门关键词</text>
+            <text bindtap="select" wx:for="{{words}}">{{item}}</text>
+        </view>
+    </view>
+   <!--=============列表展示=================-->
+    <view class="section2" style="display:{{hidden2}}">
+      <navigator class="product" wx:for="{{content}}" url="/pages/DetailsPage/DetailsPage?id={{item.r_id}}">
+        <view class="Img">
+             <image src="http://192.168.0.108:1111/{{item.ImgUrl}}"  mode="widthFix"></image>
+        </view>
+        <view class="product-text">
+              <text class="New-composer">{{item.r_name}}</text>
+            <text class="New-musicMore">{{item.English_name}} </text>
+        </view>
+      </navigator>
+   </view>
+    <!--<template is="footer2"/>-->
+</view>

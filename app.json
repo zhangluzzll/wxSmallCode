@@ -1,0 +1,35 @@
+{
+  "pages":[
+
+    "pages/index/index",
+    "pages/day1/lianxi",
+    "pages/new/new",
+    "pages/search/search",
+    "pages/DetailsPage/DetailsPage",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#312D26",
+    "navigationBarTitleText": "音乐圣经",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#867A5E",
+    "selectedColor": "#232018",
+    "backgroundColor": "#C1B087",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "LP",
+      "iconPath": "images/9.png",
+      "selectedIconPath": "images/7.png"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "images/6.png",
+      "selectedIconPath": "images/8.png"
+    }]
+  }
+}

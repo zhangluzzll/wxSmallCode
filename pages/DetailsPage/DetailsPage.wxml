@@ -1,0 +1,91 @@
+<view class="bigBox">
+  <view class="topBox">
+     <!--<view class="music" wx-if="{{content[0].audioSrc!=null}}">
+       <audio poster="http://192.168.0.108:1111/{{content[0].ImgUrl}}" name="唱片编号：{{content[0].r_num}}" author="{{content[0].composer}}" src="http://172.168.0.108:1111/{{content[0].audioSrc}}" binderror="myerror" controls ></audio>
+    </view>-->
+    <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}">
+    <!--================静态===============-->
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" id="slide-image" mode="widthFix"/>
+        </swiper-item>
+      </block>
+      <!--==========服务器==============-->
+      <!--<block wx:for="{{content}}">
+        <swiper-item>
+          <image src="http://192.168.0.108:1111/{{item.ImgSrc}}" class="slide-image" mode="widthFix"
+          id="slide-image2"
+          />
+        </swiper-item>
+      </block>-->
+    </swiper>
+<!--===========横向滚动视图===============-->
+<!--<scroll-view scroll-x="true" class="cursole">
+  <view wx:for="{{imgUrls}}">
+      <image src="{{item}}" mode="widthFix"></image>
+  </view>-->
+<!--</scroll-view>-->
+    <view class="music-name">
+          <text>{{more.musicName}}</text>
+          <text>{{more.musicMore}}</text>
+          <!--===============服务器==============-->
+          <!--<text>{{content[0].r_name}}</text>
+          <text>{{content[0].English_name}}</text>-->
+    </view>
+</view>
+   <!--===========静态==============-->
+    <view class="Introduction">
+         <view>
+            <text class="text-title">唱片介质：</text>
+            <text class="text-name">{{more.RecordMedia}}</text>
+         </view>
+          <view>
+            <text class="text-title">唱片编号：</text>
+            <text class="text-name">{{more.RecordNum}}</text>
+         </view>
+          <view>
+            <text class="text-title">唱片厂牌：</text>
+            <text class="text-name">{{more.RecordLable}}</text>
+         </view>
+          <view>
+            <text class="text-title title3">作曲家：</text>
+            <text class="text-name">{{more.composerName}}</text>
+         </view>
+          <view>
+            <text class="text-title title3">艺术家：</text>
+            <text class="text-name">{{more.artistName}}</text>
+         </view>
+    </view>
+    <!--==========静态音频播放==============-->
+     <view class="audioPlay" wx-if="{{more.musicSrc!=null}}">
+       <audio poster="{{imgUrls[2]}}" name="唱片编号：{{more.RecordNum}}" author="{{more.composerName}}" src="{{more.musicSrc}}" binderror="myerror" controls ></audio>
+    </view>
+    <!--===============音频播放-服务器============-->
+    <!--<view class="audioPlay" wx-if="{{content[0].audioSrc!=null}}">
+       <audio poster="http://192.168.0.108:1111/{{content[0].ImgUrl}}" name="唱片编号：{{content[0].r_num}}" author="{{content[0].composer}}" src="http://192.168.0.108:1111/{{content[0].audioSrc}}" binderror="myerror" controls ></audio>
+    </view>-->
+  
+<!--=================服务器======================-->
+     <!--<view class="Introduction">
+         <view  wx-if="{{content[0].Material!=null}}">
+            <text class="text-title">唱片介质：</text>
+            <text class="text-name">{{content[0].Material}}</text>
+         </view>
+          <view  wx-if="{{content[0].r_num!=null}}">
+            <text class="text-title">唱片编号：</text>
+            <text class="text-name">{{content[0].r_num}}</text>
+         </view>
+          <view wx-if="{{content[0].RecordLabel!=null}}">
+            <text class="text-title">唱片厂牌：</text>
+            <text class="text-name">{{content[0].RecordLabel}}</text>
+         </view>
+          <view wx-if="{{content[0].composer!=null}}">
+            <text class="text-title title3">作曲家：</text>
+            <text class="text-name">{{content[0].composer}}</text>
+         </view>
+          <view wx-if="{{content[0].artist!=null}}">
+            <text class="text-title title3">艺术家：</text>
+            <text class="text-name">{{content[0].artist}}</text>
+         </view>
+    </view>-->
+</view>

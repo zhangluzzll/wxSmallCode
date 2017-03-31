@@ -1,0 +1,39 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/**footer**/
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+   background-color: #C1B087;
+   display: flex;
+     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.music-check{
+    width:50%;
+    text-align: center;
+    padding-top: 1%;
+}
+.music-check image{
+    width: 15%;
+}
+.music-check view{
+    margin-top: -2%;
+    font-size: 10px;
+}
+.search{
+    color: #867A5E;
+}
+.search2{
+    color:#867A5E;
+}

@@ -1,0 +1,92 @@
+.box{
+height: 100%;
+font-family: "微软雅黑";
+}
+.header{
+    /*height:50%;*/
+    padding-top:5%;
+    display: flex;
+    justify-content:space-around;
+    background-color: #312D26;
+}
+.header text{
+    color: #C1B087;
+    /*font-weight: bolder;*/
+    font-size: 14px;
+    padding:5rpx 50rpx 25rpx 50rpx;
+}
+.textLine{
+    border-bottom:7rpx solid #C1B087;
+    border-bottom-left-radius: 2rpx;
+        border-bottom-right-radius: 2rpx;
+}
+/*============推荐=================*/
+.section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3C372F;
+    padding-bottom:10%;
+    border-top:1px solid #4B4740;
+    /*display: block;*/
+}
+.product-description{
+    width: 45%;
+    margin-top:7%;
+}
+.product-description image{
+    width: 100%;
+}
+.music-name{
+    display: flex;
+    flex-direction:column;
+}
+.composer{
+    font-size: 16px;
+    color:#C1B087;
+}
+.music-more{
+    margin-top:1%;
+    font-size: 13px;
+    color: #7D7A74;
+}
+/*================最新============*/
+.section2{
+    background-color:#3C372F;
+     /*padding-bottom:13%;*/
+}
+.hidden{
+ display: none;
+}
+.product{
+    height: 75px;
+    border-top:1px solid #4B4740;
+    border-bottom:1px solid #4B4740;
+    display: flex;
+    justify-content:space-between;
+    padding: 3% 3%;
+}
+.Img{
+    width: 20%;
+}
+.Img>image{
+    width: 100%;
+}
+.product-text{
+    align-self:center;
+     margin-left: 3%;
+}
+.product-text>text{
+    display: block;
+}
+.New-composer{
+    font-size: 35rpx;
+    color:#C1B087;
+}
+
+.New-musicMore{
+     margin-top:1%;
+    font-size: 26rpx;
+    color: #7D7A74;
+}

@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<!--<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  
+</view>-->
+<view class="box">
+   <view class="header">
+        <text class="{{recommend}}" bindtap="TabContent">推荐</text>
+        <text class="{{newClass}}" bindtap="Tabcontent">最新</text>
+   </view>
+   <view class="section1" style="display:{{hidden1}}">
+   <!--========服务器取数据==========-->
+   <!--<navigator class="product-description"   wx:for="{{content}}" url="/pages/DetailsPage/DetailsPage?id={{item.r_id}}">
+            <image src="http://192.168.0.108:1111/{{item.ImgUrl}}" mode="widthFix"></image>
+            <view class="music-name">
+                <text class="composer">{{item.r_name}}</text>
+                <text class="music-more">
+                {{item.English_name}}</text>
+            </view> 
+        </navigator>-->
+ <!--==================静态数据==========-->
+  <navigator class="product-description"   wx:for="{{productDescription}}" url="/pages/DetailsPage/DetailsPage?id=1">
+            <image src="{{item.ImgSrc}}" mode="widthFix"></image>
+            <view class="music-name">
+                <text class="composer">{{item.composer}}</text>
+                <text class="music-more">{{item.musicMore}}</text>
+            </view> 
+   </navigator>
+   </view>
+   <!--===============最新===============-->
+      <view class="section2" style="display:{{hidden2}}">
+      <!--===============服务器===============-->
+      <!--<navigator class="product" wx:for="{{content2}}" url="/pages/DetailsPage/DetailsPage?id={{item.r_id}}">
+        <view class="Img">
+             <image src="http://192.168.0.108:1111/{{item.ImgUrl}}"  mode="widthFix"></image>
+        </view>
+        <view class="product-text">
+              <text class="New-composer">{{item.r_name}}</text>
+            <text class="New-musicMore">{{item.English_name}} </text>
+        </view>
+      </navigator>-->
+<!--=====================静态================-->
+  <navigator class="product" wx:for="{{product}}" url="/pages/DetailsPage/DetailsPage?id=1">
+        <view class="Img">
+             <image src="{{item.MoreImgSrc}}"  mode="widthFix"></image>
+        </view>
+        <view class="product-text">
+              <text class="New-composer">{{item.MoreComposer}}</text>
+            <text class="New-musicMore">{{item.MoreMusic}} </text>
+        </view>
+      </navigator>
+   </view>
+   <!--<template is="footer"/>-->
+</view>

@@ -1,0 +1,75 @@
+/*.box{
+    font-family: "微软雅黑"；
+}*/
+.header{
+  height:70rpx;
+  background-color: #312D26;  
+  padding: 5% 2% 0 2%;
+  border-bottom: 1px solid #5A5751;
+}
+input{
+   background-color: #C1B087;
+   border-radius: 7rpx;
+   padding:5rpx 0 5rpx 20rpx;
+}
+/*======热门关键词==========*/
+.section{
+    background-color: #3C372F;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 90%;
+}
+.hotText{
+    text-align: center;
+    /*padding-bottom: 91%;*/
+}
+.hotText text{
+    display: block;
+    margin:5% 0;
+    color:#C1B087;
+    font-size: 35rpx;
+}
+.hotText>text:nth-child(1){
+    color: #6F6B66;
+    font-size: 30rpx;
+}
+/*======查询列表==========*/
+.section2{
+    background-color:#3C372F;
+    padding-bottom: 150%;
+}
+.product{
+    height: 75px;
+    border-top:1px solid #4B4740;
+    border-bottom:1px solid #4B4740;
+    display: flex;
+    justify-content:space-between;
+    padding: 3% 3%;
+}
+.Img{
+    width: 20%;
+}
+.Img>image{
+    width: 100%;
+}
+.product-text{
+    align-self:center;
+     margin-left: 3%;
+     width: 80%;
+}
+.product-text>text{
+    display: block;
+     overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+.New-composer{
+    font-size: 35rpx;
+    color:#C1B087;
+}
+
+.New-musicMore{
+     margin-top:1%;
+    font-size: 26rpx;
+    color: #7D7A74;
+}

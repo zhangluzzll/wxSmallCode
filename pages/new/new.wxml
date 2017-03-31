@@ -1,0 +1,19 @@
+<import src="../template/footer"/>
+<view class="box">
+   <view class="header">
+        <text>推荐</text>
+        <text class="text-line">最新</text>
+   </view>
+   <view class="section2">
+      <view class="product" wx:for="{{product}}">
+        <view class="Img">
+             <image src="{{item.MoreImgSrc}}"  mode="widthFix"></image>
+        </view>
+        <view class="product-text">
+              <text class="New-composer">{{item.MoreComposer}}</text>
+            <text class="New-musicMore">{{item.MoreMusic}} </text>
+        </view>
+      </view>
+   </view>
+   <template is="footer"/>
+</view>
